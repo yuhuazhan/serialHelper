@@ -1,0 +1,10 @@
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\bin\Debug\SerialHelperApplication1.exe.config
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\bin\Debug\SerialHelperApplication1.exe
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\bin\Debug\SerialHelperApplication1.pdb
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.csprojResolveAssemblyReference.cache
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.Properties.Resources.resources
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.csproj.GenerateResource.Cache
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.exe
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.pdb
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.SerialHelper_Form.resources
+C:\Users\net73\Desktop\yuhua\串口助手\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.WinFormStrings_cn.resources
