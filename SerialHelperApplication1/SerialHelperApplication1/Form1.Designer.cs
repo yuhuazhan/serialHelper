@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SerialHelper_Form));
+            this.recv_textb = new System.Windows.Forms.TextBox();
             this.dataLen_lbl = new System.Windows.Forms.Label();
             this.stopBits_lbl = new System.Windows.Forms.Label();
             this.checkBit_lbl = new System.Windows.Forms.Label();
@@ -48,17 +49,16 @@
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mangeCom_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.clearRecvtxtb_btn = new System.Windows.Forms.Button();
             this.AutoScroll_chb = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.語言ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.简体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,11 +66,17 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // recv_textb
+            // 
+            resources.ApplyResources(this.recv_textb, "recv_textb");
+            this.recv_textb.Name = "recv_textb";
+            this.recv_textb.TextChanged += new System.EventHandler(this.recv_textb_TextChanged);
             // 
             // dataLen_lbl
             // 
@@ -213,6 +219,12 @@
             resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
             this.checkedListBox1.Name = "checkedListBox1";
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // mangeCom_btn
             // 
             resources.ApplyResources(this.mangeCom_btn, "mangeCom_btn");
@@ -223,9 +235,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.clearRecvtxtb_btn);
             this.groupBox2.Controls.Add(this.AutoScroll_chb);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.recv_textb);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
@@ -236,23 +248,19 @@
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // clearRecvtxtb_btn
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.clearRecvtxtb_btn, "clearRecvtxtb_btn");
+            this.clearRecvtxtb_btn.Name = "clearRecvtxtb_btn";
+            this.clearRecvtxtb_btn.UseVisualStyleBackColor = true;
+            this.clearRecvtxtb_btn.Click += new System.EventHandler(this.clearRecvtxtb_btn_Click);
             // 
             // AutoScroll_chb
             // 
             resources.ApplyResources(this.AutoScroll_chb, "AutoScroll_chb");
             this.AutoScroll_chb.Name = "AutoScroll_chb";
             this.AutoScroll_chb.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.AutoScroll_chb.CheckedChanged += new System.EventHandler(this.AutoScroll_chb_CheckedChanged);
             // 
             // tabControl1
             // 
@@ -273,12 +281,6 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -315,10 +317,10 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -339,14 +341,13 @@
         private System.Windows.Forms.ComboBox stopBitsSelect_comb;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button mangeCom_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckBox AutoScroll_chb;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button clearRecvtxtb_btn;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
@@ -359,6 +360,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 語言ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 简体ToolStripMenuItem;
+        private System.Windows.Forms.TextBox recv_textb;
     }
 }
 

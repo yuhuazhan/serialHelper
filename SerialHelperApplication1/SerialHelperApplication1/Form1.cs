@@ -16,6 +16,11 @@ namespace SerialHelperApplication1
         private string[] baudRate = {"1200","2400","4800","9600","14400","19200","38400","43000","57600","76800","115200","128000",
                                 "230400","256000","460800","921600","1382400","自定義" };
         private string[] dataBits = { "5","6","7","8"};
+        Boolean AutoScroll_state = false; //預設不啟用自動下拉
+
+        delegate void Display(Byte[] buffer); //(委派)定義函式指標型態
+        private Encoding enc = Encoding.ASCII; //使用ASCII編碼
+
         public SerialHelper_Form()
         {
             InitializeComponent();
@@ -30,11 +35,7 @@ namespace SerialHelperApplication1
        
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.SelectionStart = textBox1.Text.Length;
-            textBox1.ScrollToCaret();
-        }
+       
         //初始化和串列通訊有關的UI
         private void IntializeUIForSerial()
         {
@@ -66,12 +67,15 @@ namespace SerialHelperApplication1
                 serialPort1.DataBits = int.Parse(dataBitsSelect_comb.Text);
                 serialPort1.StopBits = (StopBits)(Enum.Parse(typeof(StopBits),stopBitsSelect_comb.Text));
                 serialPort1.Parity = (Parity)(Enum.Parse(typeof(Parity), checkBitSelect_comb.Text));
+                serialPort1.DtrEnable = true; // 表示啟用 Data Terminal Ready (DTR)；否則為 false。預設為 false。 
+                                              //資料終端機就緒 (DTR) 通常是在 XON/XOFF 軟體信號交換和傳送 (RTS/CTS) 硬體信號交換，與數據機通訊的傳送/清除要求期間啟用。
                 try
                 {
+                    
                     serialPort1.Open(); //開啟串口，只有這行會出錯
                     serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived);
                     pictureBox1.Load(System.Environment.CurrentDirectory + "/picture/open.png");
-                    mangeCom_btn.Text = "關閉串口";
+                    mangeCom_btn.Text = "close";
                 }
                 catch(Exception err)
                 {
@@ -82,19 +86,35 @@ namespace SerialHelperApplication1
             else
             {
                 pictureBox1.Load(System.Environment.CurrentDirectory + "/picture/close.png");
-                mangeCom_btn.Text = "開啟串口";
+                mangeCom_btn.Text = "open";
                 serialPort1.Close();//關閉串口               
             }
         }
-
+        //不屬於主執行緒的執行緒，需要透過委派的方式由主執行緒上
+        //的函數才能更新主執行緒上的UI
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            throw new NotImplementedException();
             if ((sender as SerialPort).BytesToRead > 0)
             {
                 Byte[] buffer = new Byte[1024];
                 Int32 length = (sender as SerialPort).Read(buffer, 0, buffer.Length);
                 Array.Resize(ref buffer, length); //將buffer大小調整成收到數據的大小
+                Display d = new Display(updateRecv_textb); //(委派指向的函數地址)(給函數指標設定指向函數的地址)
+                this.Invoke(d, new Object[] { buffer }); //執行委派，調用函數指標(指定回調函數)
+            }
+        }
+
+        private void updateRecv_textb(byte[] buffer)
+        {
+            recv_textb.Text += enc.GetString(buffer);
+        }
+
+        private void recv_textb_TextChanged(object sender, EventArgs e)
+        {
+            if (AutoScroll_state) //如果使能自動下拉
+            {
+                recv_textb.SelectionStart = recv_textb.Text.Length;
+                recv_textb.ScrollToCaret();
             }
         }
         //menu 選擇語系->簡體  回調函數 還沒完整支援
@@ -110,6 +130,16 @@ namespace SerialHelperApplication1
             groupBox2.Text = LocRM.GetString("groupBox2_txt");
             groupBox3.Text = LocRM.GetString("groupBox3_txt");
             groupBox4.Text = LocRM.GetString("groupBox4_txt");
+        }
+
+        private void AutoScroll_chb_CheckedChanged(object sender, EventArgs e)
+        {
+            AutoScroll_state = !AutoScroll_state;
+        }
+
+        private void clearRecvtxtb_btn_Click(object sender, EventArgs e)
+        {
+            recv_textb.Text = "";//清除接收顯示區域資料
         }
     }
   
