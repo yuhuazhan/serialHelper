@@ -141,6 +141,9 @@
   <data name="mangeCom_btn_txt" xml:space="preserve">
     <value>开启串口</value>
   </data>
+  <data name="msg_serialNotOpen_err" xml:space="preserve">
+    <value>串口尚未开启</value>
+  </data>
   <data name="serialNumber_lbl_txt" xml:space="preserve">
     <value>串口号</value>
   </data>

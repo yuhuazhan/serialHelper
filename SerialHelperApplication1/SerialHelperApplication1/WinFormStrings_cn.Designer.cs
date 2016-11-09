@@ -133,6 +133,15 @@ namespace SerialHelperApplication1 {
         }
         
         /// <summary>
+        ///   查詢類似 串口尚未开启 的當地語系化字串。
+        /// </summary>
+        internal static string msg_serialNotOpen_err {
+            get {
+                return ResourceManager.GetString("msg_serialNotOpen_err", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 串口号 的當地語系化字串。
         /// </summary>
         internal static string serialNumber_lbl_txt {

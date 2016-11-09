@@ -57,11 +57,13 @@
             this.AutoScroll_chb = new System.Windows.Forms.CheckBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.singleSendText_rtxtb = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.語言ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.简体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.versionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -69,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,6 +163,7 @@
             resources.ApplyResources(this.SenData_btn, "SenData_btn");
             this.SenData_btn.Name = "SenData_btn";
             this.SenData_btn.UseVisualStyleBackColor = true;
+            this.SenData_btn.Click += new System.EventHandler(this.SenData_btn_Click);
             // 
             // groupBox4
             // 
@@ -272,9 +276,15 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.singleSendText_rtxtb);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // singleSendText_rtxtb
+            // 
+            resources.ApplyResources(this.singleSendText_rtxtb, "singleSendText_rtxtb");
+            this.singleSendText_rtxtb.Name = "singleSendText_rtxtb";
             // 
             // tabPage2
             // 
@@ -285,7 +295,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.語言ToolStripMenuItem});
+            this.語言ToolStripMenuItem,
+            this.versionMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -301,6 +312,12 @@
             this.简体ToolStripMenuItem.Name = "简体ToolStripMenuItem";
             resources.ApplyResources(this.简体ToolStripMenuItem, "简体ToolStripMenuItem");
             this.简体ToolStripMenuItem.Click += new System.EventHandler(this.简体ToolStripMenuItem_Click);
+            // 
+            // versionMenuItem
+            // 
+            this.versionMenuItem.Name = "versionMenuItem";
+            resources.ApplyResources(this.versionMenuItem, "versionMenuItem");
+            this.versionMenuItem.Click += new System.EventHandler(this.versionMenuItem_Click);
             // 
             // SerialHelper_Form
             // 
@@ -321,6 +338,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -361,6 +379,8 @@
         private System.Windows.Forms.ToolStripMenuItem 語言ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 简体ToolStripMenuItem;
         private System.Windows.Forms.TextBox recv_textb;
+        private System.Windows.Forms.RichTextBox singleSendText_rtxtb;
+        private System.Windows.Forms.ToolStripMenuItem versionMenuItem;
     }
 }
 
