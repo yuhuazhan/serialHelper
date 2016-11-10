@@ -69,35 +69,5 @@ namespace SerialHelperApplication1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap playstation_circle_icon {
-            get {
-                object obj = ResourceManager.GetObject("playstation-circle-icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap playstation_cross_black_and_white_icon {
-            get {
-                object obj = ResourceManager.GetObject("playstation-cross-black-and-white-icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap playstation_cross_black_and_white_icon1 {
-            get {
-                object obj = ResourceManager.GetObject("playstation-cross-black-and-white-icon1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

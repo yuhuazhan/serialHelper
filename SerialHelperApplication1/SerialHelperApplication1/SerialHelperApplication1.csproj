@@ -91,16 +91,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\playstation-circle-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\playstation-cross-black-and-white-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\playstation-cross-black-and-white-icon1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="bin\Debug\picture\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

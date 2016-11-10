@@ -9,17 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Resources;
+using System.Reflection;
 namespace SerialHelperApplication1
 {
     public partial class SerialHelper_Form : Form
     {
+
+        string version = "Version 1.04-beta";
         private string[] baudRate = {"1200","2400","4800","9600","14400","19200","38400","43000","57600","76800","115200","128000",
                                 "230400","256000","460800","921600","1382400","自定義" };
         private string[] dataBits = { "5","6","7","8"};
         Boolean AutoScroll_state = false; //預設不啟用自動下拉
         enum Language_type{type_tw=0,type_cn,type_en}; //定義語言狀態類型
         Language_type Ltype =  Language_type.type_tw;
-
         delegate void Display(String str); //(委派)定義函式指標型態
       
         private Encoding enc = Encoding.GetEncoding("big5"); //使用big5編碼
@@ -33,7 +35,7 @@ namespace SerialHelperApplication1
         {
             //新增介面中有關Serial相關的屬性
             //如波特率 9600........等。
-            pictureBox1.Load(System.Environment.CurrentDirectory+"/picture/close.png");
+            pictureBox1.Image = (Image)LocRM_cn.GetObject("close");
             IntializeUIForSerial();
        
         }
@@ -78,7 +80,8 @@ namespace SerialHelperApplication1
                     
                     serialPort1.Open(); //開啟串口，只有這行會出錯
                     serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived);
-                    pictureBox1.Load(System.Environment.CurrentDirectory + "/picture/open.png");
+                    pictureBox1.Image = (Image)LocRM_cn.GetObject("open");
+
                     mangeCom_btn.Text = "close";
                 }
                 catch(Exception err)
@@ -89,7 +92,7 @@ namespace SerialHelperApplication1
             }
             else
             {
-                pictureBox1.Load(System.Environment.CurrentDirectory + "/picture/close.png");
+                pictureBox1.Image = (Image)LocRM_cn.GetObject("close");
                 mangeCom_btn.Text = "open";
                 serialPort1.Close();//關閉串口               
             }
@@ -147,7 +150,7 @@ namespace SerialHelperApplication1
 
         private void versionMenuItem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(version);
         }
 
         private void SenData_btn_Click(object sender, EventArgs e)

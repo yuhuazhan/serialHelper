@@ -1,0 +1,9 @@
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\bin\Release\SerialHelperApplication1.exe.config
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\bin\Release\SerialHelperApplication1.exe
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\bin\Release\SerialHelperApplication1.pdb
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.SerialHelper_Form.resources
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.Properties.Resources.resources
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.WinFormStrings_cn.resources
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.csproj.GenerateResource.Cache
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.exe
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.pdb

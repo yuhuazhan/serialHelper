@@ -79,6 +79,16 @@ namespace SerialHelperApplication1 {
         }
         
         /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 数据位 的當地語系化字串。
         /// </summary>
         internal static string dataLen_lbl_txt {
@@ -138,6 +148,16 @@ namespace SerialHelperApplication1 {
         internal static string msg_serialNotOpen_err {
             get {
                 return ResourceManager.GetString("msg_serialNotOpen_err", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap open {
+            get {
+                object obj = ResourceManager.GetObject("open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
