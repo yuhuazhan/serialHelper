@@ -7,3 +7,4 @@ C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplica
 C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.csproj.GenerateResource.Cache
 C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.exe
 C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.pdb
+C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Release\SerialHelperApplication1.csprojResolveAssemblyReference.cache

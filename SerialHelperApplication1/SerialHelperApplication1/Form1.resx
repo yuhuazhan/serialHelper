@@ -420,6 +420,90 @@
   <data name="&gt;&gt;checkBitSelect_comb.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="&gt;&gt;SenData_btn.Name" xml:space="preserve">
+    <value>SenData_btn</value>
+  </data>
+  <data name="&gt;&gt;SenData_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SenData_btn.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;SenData_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mangeCom_btn.Name" xml:space="preserve">
+    <value>mangeCom_btn</value>
+  </data>
+  <data name="&gt;&gt;mangeCom_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mangeCom_btn.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;mangeCom_btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 47</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 547</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>串口配置</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="SenData_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -450,6 +534,135 @@
   <data name="&gt;&gt;SenData_btn.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;timeSend_chb.Name" xml:space="preserve">
+    <value>timeSend_chb</value>
+  </data>
+  <data name="&gt;&gt;timeSend_chb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeSend_chb.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;timeSend_chb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.Name" xml:space="preserve">
+    <value>sendEndtype_chb</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;timeSend_numup.Name" xml:space="preserve">
+    <value>timeSend_numup</value>
+  </data>
+  <data name="&gt;&gt;timeSend_numup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeSend_numup.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;timeSend_numup.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 293</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 71</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>發送格式</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="timeSend_chb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="timeSend_chb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="timeSend_chb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="timeSend_chb.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="timeSend_chb.Text" xml:space="preserve">
+    <value>定時發送</value>
+  </data>
+  <data name="&gt;&gt;timeSend_chb.Name" xml:space="preserve">
+    <value>timeSend_chb</value>
+  </data>
+  <data name="&gt;&gt;timeSend_chb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeSend_chb.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;timeSend_chb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="sendEndtype_chb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sendEndtype_chb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sendEndtype_chb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 18</value>
+  </data>
+  <data name="sendEndtype_chb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 20</value>
+  </data>
+  <data name="sendEndtype_chb.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="sendEndtype_chb.Text" xml:space="preserve">
+    <value>發送新行(/r/n)</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.Name" xml:space="preserve">
+    <value>sendEndtype_chb</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;sendEndtype_chb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -457,7 +670,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 41</value>
+    <value>165, 46</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 16</value>
@@ -478,121 +691,52 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
-  <data name="numericUpDown1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="timeSend_numup.Font" type="System.Drawing.Font, System.Drawing">
     <value>新細明體, 9.75pt</value>
   </data>
-  <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 35</value>
+  <data name="timeSend_numup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 45</value>
   </data>
-  <data name="numericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="timeSend_numup.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 23</value>
   </data>
-  <data name="numericUpDown1.TabIndex" type="System.Int32, mscorlib">
+  <data name="timeSend_numup.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="numericUpDown1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+  <data name="timeSend_numup.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="&gt;&gt;numericUpDown1.Name" xml:space="preserve">
-    <value>numericUpDown1</value>
+  <data name="&gt;&gt;timeSend_numup.Name" xml:space="preserve">
+    <value>timeSend_numup</value>
   </data>
-  <data name="&gt;&gt;numericUpDown1.Type" xml:space="preserve">
+  <data name="&gt;&gt;timeSend_numup.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numericUpDown1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;timeSend_numup.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;numericUpDown1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;timeSend_numup.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="checkedListBox2.Items" xml:space="preserve">
-    <value>回車換行(/r/n)</value>
+  <data name="&gt;&gt;recv_formate_chb.Name" xml:space="preserve">
+    <value>recv_formate_chb</value>
   </data>
-  <data name="checkedListBox2.Items1" xml:space="preserve">
-    <value>定時</value>
+  <data name="&gt;&gt;recv_formate_chb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkedListBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 16</value>
-  </data>
-  <data name="checkedListBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 48</value>
-  </data>
-  <data name="checkedListBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox2.Name" xml:space="preserve">
-    <value>checkedListBox2</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox2.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 311</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 71</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>發送格式</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="checkedListBox1.Items" xml:space="preserve">
-    <value>字串顯示</value>
-  </data>
-  <data name="checkedListBox1.Items1" xml:space="preserve">
-    <value>16進制顯示</value>
-  </data>
-  <data name="checkedListBox1.Items2" xml:space="preserve">
-    <value>接收自動換行</value>
-  </data>
-  <data name="checkedListBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 25</value>
-  </data>
-  <data name="checkedListBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 66</value>
-  </data>
-  <data name="checkedListBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox1.Name" xml:space="preserve">
-    <value>checkedListBox1</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkedListBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;recv_formate_chb.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;checkedListBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;recv_formate_chb.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 208</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 97</value>
+    <value>198, 79</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -611,6 +755,33 @@
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="recv_formate_chb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recv_formate_chb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 27</value>
+  </data>
+  <data name="recv_formate_chb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 20</value>
+  </data>
+  <data name="recv_formate_chb.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="recv_formate_chb.Text" xml:space="preserve">
+    <value>16進制顯示</value>
+  </data>
+  <data name="&gt;&gt;recv_formate_chb.Name" xml:space="preserve">
+    <value>recv_formate_chb</value>
+  </data>
+  <data name="&gt;&gt;recv_formate_chb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recv_formate_chb.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;recv_formate_chb.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -666,28 +837,64 @@
   <data name="&gt;&gt;mangeCom_btn.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>577, 50</value>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 547</value>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>串口配置</value>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;clearRecvtxtb_btn.Name" xml:space="preserve">
+    <value>clearRecvtxtb_btn</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;clearRecvtxtb_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clearRecvtxtb_btn.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;clearRecvtxtb_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;AutoScroll_chb.Name" xml:space="preserve">
+    <value>AutoScroll_chb</value>
+  </data>
+  <data name="&gt;&gt;AutoScroll_chb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AutoScroll_chb.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;AutoScroll_chb.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>559, 317</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>接收顯示區域</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -774,41 +981,50 @@
   <data name="&gt;&gt;AutoScroll_chb.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 38</value>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>559, 317</value>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>接收顯示區域</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="singleSendText_rtxtb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="singleSendText_rtxtb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>539, 181</value>
-  </data>
-  <data name="singleSendText_rtxtb.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="singleSendText_rtxtb.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 377</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 217</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;singleSendText_rtxtb.Name" xml:space="preserve">
     <value>singleSendText_rtxtb</value>
@@ -849,6 +1065,30 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="singleSendText_rtxtb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="singleSendText_rtxtb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>539, 181</value>
+  </data>
+  <data name="singleSendText_rtxtb.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="singleSendText_rtxtb.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;singleSendText_rtxtb.Name" xml:space="preserve">
+    <value>singleSendText_rtxtb</value>
+  </data>
+  <data name="&gt;&gt;singleSendText_rtxtb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;singleSendText_rtxtb.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;singleSendText_rtxtb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 26</value>
   </data>
@@ -876,56 +1116,17 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 377</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>553, 217</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="serialPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>130, 17</value>
   </metadata>
-  <data name="简体ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 22</value>
-  </data>
-  <data name="简体ToolStripMenuItem.Text" xml:space="preserve">
-    <value>简体</value>
-  </data>
-  <data name="語言ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="語言ToolStripMenuItem.Text" xml:space="preserve">
-    <value>語言</value>
-  </data>
-  <data name="versionMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="versionMenuItem.Text" xml:space="preserve">
-    <value>版本</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 24</value>
+    <value>810, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -943,8 +1144,71 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
+  <data name="語言ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="語言ToolStripMenuItem.Text" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="简体ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="简体ToolStripMenuItem.Text" xml:space="preserve">
+    <value>简体</value>
+  </data>
+  <data name="versionMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="versionMenuItem.Text" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>249, 17</value>
+  </metadata>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 609</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 22</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="sendlen_Stalb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="sendlen_Stalb.Text" xml:space="preserve">
+    <value>發送長度:            </value>
+  </data>
+  <data name="toolStripStatusLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 17</value>
+  </data>
+  <data name="toolStripStatusLabel2.Text" xml:space="preserve">
+    <value>接收長度:          </value>
+  </data>
+  <metadata name="comPort_tmr.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>369, 17</value>
+  </metadata>
+  <metadata name="timerSend.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>496, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -958,7 +1222,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>784, 611</value>
+    <value>810, 631</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>新細明體, 12pt</value>
@@ -967,7 +1231,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>EE501串口助手</value>
+    <value>串口助手</value>
   </data>
   <data name="&gt;&gt;serialPort1.Name" xml:space="preserve">
     <value>serialPort1</value>
@@ -992,6 +1256,30 @@
   </data>
   <data name="&gt;&gt;versionMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sendlen_Stalb.Name" xml:space="preserve">
+    <value>sendlen_Stalb</value>
+  </data>
+  <data name="&gt;&gt;sendlen_Stalb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Name" xml:space="preserve">
+    <value>toolStripStatusLabel2</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comPort_tmr.Name" xml:space="preserve">
+    <value>comPort_tmr</value>
+  </data>
+  <data name="&gt;&gt;comPort_tmr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerSend.Name" xml:space="preserve">
+    <value>timerSend</value>
+  </data>
+  <data name="&gt;&gt;timerSend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SerialHelper_Form</value>

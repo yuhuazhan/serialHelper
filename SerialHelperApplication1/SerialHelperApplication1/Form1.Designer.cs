@@ -44,11 +44,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SenData_btn = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.timeSend_chb = new System.Windows.Forms.CheckBox();
+            this.sendEndtype_chb = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.timeSend_numup = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.recv_formate_chb = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mangeCom_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -64,15 +65,21 @@
             this.語言ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.简体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.versionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.sendlen_Stalb = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.comPort_tmr = new System.Windows.Forms.Timer(this.components);
+            this.timerSend = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeSend_numup)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // recv_textb
@@ -167,61 +174,61 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.timeSend_chb);
+            this.groupBox4.Controls.Add(this.sendEndtype_chb);
             this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Controls.Add(this.numericUpDown1);
-            this.groupBox4.Controls.Add(this.checkedListBox2);
+            this.groupBox4.Controls.Add(this.timeSend_numup);
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            // 
+            // timeSend_chb
+            // 
+            resources.ApplyResources(this.timeSend_chb, "timeSend_chb");
+            this.timeSend_chb.Name = "timeSend_chb";
+            this.timeSend_chb.UseVisualStyleBackColor = true;
+            this.timeSend_chb.CheckedChanged += new System.EventHandler(this.timeSend_chb_CheckedChanged);
+            // 
+            // sendEndtype_chb
+            // 
+            resources.ApplyResources(this.sendEndtype_chb, "sendEndtype_chb");
+            this.sendEndtype_chb.Name = "sendEndtype_chb";
+            this.sendEndtype_chb.UseVisualStyleBackColor = true;
+            this.sendEndtype_chb.CheckedChanged += new System.EventHandler(this.sendEndtype_chb_CheckedChanged);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // numericUpDown1
+            // timeSend_numup
             // 
-            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
-            this.numericUpDown1.Increment = new decimal(new int[] {
+            resources.ApplyResources(this.timeSend_numup, "timeSend_numup");
+            this.timeSend_numup.Increment = new decimal(new int[] {
             100,
             0,
             0,
             0});
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.timeSend_numup.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            resources.GetString("checkedListBox2.Items"),
-            resources.GetString("checkedListBox2.Items1")});
-            resources.ApplyResources(this.checkedListBox2, "checkedListBox2");
-            this.checkedListBox2.Name = "checkedListBox2";
+            this.timeSend_numup.Name = "timeSend_numup";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkedListBox1);
+            this.groupBox3.Controls.Add(this.recv_formate_chb);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
-            // checkedListBox1
+            // recv_formate_chb
             // 
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            resources.GetString("checkedListBox1.Items"),
-            resources.GetString("checkedListBox1.Items1"),
-            resources.GetString("checkedListBox1.Items2")});
-            resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
-            this.checkedListBox1.Name = "checkedListBox1";
+            resources.ApplyResources(this.recv_formate_chb, "recv_formate_chb");
+            this.recv_formate_chb.Name = "recv_formate_chb";
+            this.recv_formate_chb.UseVisualStyleBackColor = true;
+            this.recv_formate_chb.CheckedChanged += new System.EventHandler(this.recv_formate_chb_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -319,10 +326,37 @@
             resources.ApplyResources(this.versionMenuItem, "versionMenuItem");
             this.versionMenuItem.Click += new System.EventHandler(this.versionMenuItem_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sendlen_Stalb,
+            this.toolStripStatusLabel2});
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.Name = "statusStrip1";
+            // 
+            // sendlen_Stalb
+            // 
+            this.sendlen_Stalb.Name = "sendlen_Stalb";
+            resources.ApplyResources(this.sendlen_Stalb, "sendlen_Stalb");
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            resources.ApplyResources(this.toolStripStatusLabel2, "toolStripStatusLabel2");
+            // 
+            // comPort_tmr
+            // 
+            this.comPort_tmr.Tick += new System.EventHandler(this.comPort_tmr_Tick);
+            // 
+            // timerSend
+            // 
+            this.timerSend.Tick += new System.EventHandler(this.timerSend_Tick);
+            // 
             // SerialHelper_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -332,8 +366,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeSend_numup)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -341,6 +376,8 @@
             this.tabPage1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,13 +399,11 @@
         private System.Windows.Forms.Button mangeCom_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckBox AutoScroll_chb;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button clearRecvtxtb_btn;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown timeSend_numup;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -381,6 +416,14 @@
         private System.Windows.Forms.TextBox recv_textb;
         private System.Windows.Forms.RichTextBox singleSendText_rtxtb;
         private System.Windows.Forms.ToolStripMenuItem versionMenuItem;
+        private System.Windows.Forms.CheckBox recv_formate_chb;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel sendlen_Stalb;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.CheckBox timeSend_chb;
+        private System.Windows.Forms.CheckBox sendEndtype_chb;
+        private System.Windows.Forms.Timer comPort_tmr;
+        private System.Windows.Forms.Timer timerSend;
     }
 }
 
