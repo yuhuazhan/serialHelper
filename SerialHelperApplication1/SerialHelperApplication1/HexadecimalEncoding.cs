@@ -11,11 +11,12 @@ namespace SerialHelperApplication1
       
             public static string ToHexString(string str)
             {
-                if (str == "") return "";
+                
                 var sb = new StringBuilder();
                 var bytes = Encoding.UTF8.GetBytes(str);
                 foreach (var t in bytes)
                 {
+                    if (t == 0x00) continue;
                     sb.Append(t.ToString("X2") + " ");
                 }
 
@@ -29,7 +30,7 @@ namespace SerialHelperApplication1
                 var bytes = new byte[hexString.Length / 2];
                 for (var i = 0; i < bytes.Length; i++)
                 {
-                
+                    
                     bytes[i] = Convert.ToByte(hexString.Substring(i*2,2), 16);
                 
                 }

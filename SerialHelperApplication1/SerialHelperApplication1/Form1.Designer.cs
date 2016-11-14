@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SerialHelper_Form));
-            this.recv_textb = new System.Windows.Forms.TextBox();
             this.dataLen_lbl = new System.Windows.Forms.Label();
             this.stopBits_lbl = new System.Windows.Forms.Label();
             this.checkBit_lbl = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mangeCom_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.recvText_rtxtb = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.clearRecvtxtb_btn = new System.Windows.Forms.Button();
             this.AutoScroll_chb = new System.Windows.Forms.CheckBox();
@@ -81,12 +81,6 @@
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // recv_textb
-            // 
-            resources.ApplyResources(this.recv_textb, "recv_textb");
-            this.recv_textb.Name = "recv_textb";
-            this.recv_textb.TextChanged += new System.EventHandler(this.recv_textb_TextChanged);
             // 
             // dataLen_lbl
             // 
@@ -245,13 +239,19 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.recvText_rtxtb);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.clearRecvtxtb_btn);
             this.groupBox2.Controls.Add(this.AutoScroll_chb);
-            this.groupBox2.Controls.Add(this.recv_textb);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // recvText_rtxtb
+            // 
+            resources.ApplyResources(this.recvText_rtxtb, "recvText_rtxtb");
+            this.recvText_rtxtb.Name = "recvText_rtxtb";
+            this.recvText_rtxtb.TextChanged += new System.EventHandler(this.recvText_rtxtb_TextChanged);
             // 
             // button2
             // 
@@ -413,7 +413,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 語言ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 简体ToolStripMenuItem;
-        private System.Windows.Forms.TextBox recv_textb;
         private System.Windows.Forms.RichTextBox singleSendText_rtxtb;
         private System.Windows.Forms.ToolStripMenuItem versionMenuItem;
         private System.Windows.Forms.CheckBox recv_formate_chb;
@@ -424,6 +423,7 @@
         private System.Windows.Forms.CheckBox sendEndtype_chb;
         private System.Windows.Forms.Timer comPort_tmr;
         private System.Windows.Forms.Timer timerSend;
+        private System.Windows.Forms.RichTextBox recvText_rtxtb;
     }
 }
 

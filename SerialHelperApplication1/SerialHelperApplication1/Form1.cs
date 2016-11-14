@@ -113,30 +113,31 @@ namespace SerialHelperApplication1
             {
                 Byte[] buffer = new Byte[serialPort1.BytesToRead];
                 serialPort1.Read(buffer, 0, buffer.Length);
-                Display d = new Display(updateRecv_textb); //(委派指向的函數地址)(給函數指標設定指向函數的地址)           
+                Display d = new Display(updaterecvText_rtxtb); //(委派指向的函數地址)(給函數指標設定指向函數的地址)           
                 this.Invoke(d, new object[] { enc.GetString(buffer)}); //執行委派，調用函數指標(指定回調函數)
             }
         }
         //被委派的函式,向ｕｉ更新資料
-        private void updateRecv_textb(string str )
+        private void updaterecvText_rtxtb(string str )
         {
             if(dispFormate == display_formate.formate_string)
             {
-                recv_textb.Text += str ;
+                recvText_rtxtb.Text += str ;
             }
                 
             else
             {
-                recv_textb.Text += HexadecimalEncoding.ToHexString(str);
+                recvText_rtxtb.Text += HexadecimalEncoding.ToHexString(str);
             }
         }
 
-        private void recv_textb_TextChanged(object sender, EventArgs e)
+        private void recvText_rtxtb_TextChanged(object sender, EventArgs e)
         {
             if (AutoScroll_state) //如果使能自動下拉
             {
-                recv_textb.SelectionStart = recv_textb.Text.Length;
-                recv_textb.ScrollToCaret();
+                recvText_rtxtb.SelectionStart = recvText_rtxtb.Text.Length;
+                recvText_rtxtb.ScrollToCaret();
+                
             }
         }
         //menu 選擇語系->簡體  回調函數 還沒完整支援
@@ -161,7 +162,7 @@ namespace SerialHelperApplication1
         //清除接收顯示區域資料
         private void clearRecvtxtb_btn_Click(object sender, EventArgs e)
         {
-            recv_textb.Text = "";
+            recvText_rtxtb.Text = "";
         }
         //版本顯示
         private void versionMenuItem_Click(object sender, EventArgs e)
@@ -211,12 +212,14 @@ namespace SerialHelperApplication1
             if (recv_formate_chb.Checked)//選擇16進制發送，打勾
             {
                 dispFormate = display_formate.formate_hex;
-                recv_textb.Text = HexadecimalEncoding.ToHexString(recv_textb.Text);
+                recvText_rtxtb.Text = HexadecimalEncoding.ToHexString(recvText_rtxtb.Text);
             }
             else
             {
                 dispFormate = display_formate.formate_string;
-                recv_textb.Text = HexadecimalEncoding.FromHexString(recv_textb.Text);  
+                MessageBox.Show(recvText_rtxtb.Text);
+                recvText_rtxtb.Text = HexadecimalEncoding.FromHexString(recvText_rtxtb.Text);
+                MessageBox.Show(HexadecimalEncoding.ToHexString(recvText_rtxtb.Text));
             }
         }
         //發送封包格式是否使用特殊格式
@@ -276,6 +279,8 @@ namespace SerialHelperApplication1
         {      
             SenData_btn.PerformClick();//叫發送按鈕工作
         }
+
+     
     }
   
 }
