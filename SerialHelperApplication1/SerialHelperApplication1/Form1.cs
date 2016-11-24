@@ -28,10 +28,7 @@ namespace SerialHelperApplication1
         display_formate dispFormate = display_formate.formate_string; //預設字串顯示
         PacketEndType Endtype = PacketEndType.EndTypeNone;//預設發送封包結尾不加/r/n
         delegate void Display(string str); //(委派)定義函式指標型態
-        
-
-
-        private Encoding enc = Encoding.UTF8; //使用big5編碼
+        public Encoding enc = Encoding.UTF8; //使用big5編碼
         ResourceManager LocRM_cn = new ResourceManager("SerialHelperApplication1.WinFormStrings_cn", typeof(SerialHelper_Form).Assembly);//簡體資源管器
         public SerialHelper_Form()
         {
@@ -67,7 +64,7 @@ namespace SerialHelperApplication1
             //combobox 取得所有工作管理員當中的串口號         
             comSelect_comb.Items.AddRange(SerialPort.GetPortNames());
             dataBitsSelect_comb.Items.AddRange(dataBits);
-            
+           
         }
         //開啟串口或關閉串口按鈕回調函數
         private void mangeCom_btn_Click(object sender, EventArgs e)
@@ -81,8 +78,10 @@ namespace SerialHelperApplication1
                 serialPort1.StopBits = (StopBits)(Enum.Parse(typeof(StopBits),stopBitsSelect_comb.Text));
                 serialPort1.Parity = (Parity)(Enum.Parse(typeof(Parity), checkBitSelect_comb.Text));
                 serialPort1.DtrEnable = true; // 表示啟用 Data Terminal Ready (DTR)；否則為 false。預設為 false。 
-                serialPort1.Encoding = Encoding.UTF8;
                                               //資料終端機就緒 (DTR) 通常是在 XON/XOFF 軟體信號交換和傳送 (RTS/CTS) 硬體信號交換，與數據機通訊的傳送/清除要求期間啟用。
+                //serialPort1.RtsEnable = true;
+                serialPort1.Encoding = Encoding.UTF8;
+                                              
                 try
                 {
                     
@@ -153,6 +152,9 @@ namespace SerialHelperApplication1
             groupBox2.Text = LocRM_cn.GetString("groupBox2_txt");
             groupBox3.Text = LocRM_cn.GetString("groupBox3_txt");
             groupBox4.Text = LocRM_cn.GetString("groupBox4_txt");
+
+            
+
         }
 
         private void AutoScroll_chb_CheckedChanged(object sender, EventArgs e)
@@ -217,9 +219,9 @@ namespace SerialHelperApplication1
             else
             {
                 dispFormate = display_formate.formate_string;
-                MessageBox.Show(recvText_rtxtb.Text);
+                //MessageBox.Show(recvText_rtxtb.Text);
                 recvText_rtxtb.Text = HexadecimalEncoding.FromHexString(recvText_rtxtb.Text);
-                MessageBox.Show(HexadecimalEncoding.ToHexString(recvText_rtxtb.Text));
+                //MessageBox.Show(HexadecimalEncoding.FromHexString(recvText_rtxtb.Text));
             }
         }
         //發送封包格式是否使用特殊格式

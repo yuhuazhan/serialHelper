@@ -18,3 +18,13 @@ C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplica
 C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.Properties.Resources.resources
 C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.WinFormStrings_cn.resources
 C:\Users\net73\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\bin\Debug\SerialHelperApplication1.exe.config
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.exe
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.pdb
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\bin\Debug\SerialHelperApplication1.exe
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\bin\Debug\SerialHelperApplication1.pdb
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.SerialHelper_Form.resources
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.Properties.Resources.resources
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.WinFormStrings_cn.resources
+C:\Users\user\Desktop\serialHelper\SerialHelperApplication1\SerialHelperApplication1\obj\Debug\SerialHelperApplication1.csproj.GenerateResource.Cache

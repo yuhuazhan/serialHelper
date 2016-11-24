@@ -61,6 +61,15 @@ namespace SerialHelperApplication1 {
         }
         
         /// <summary>
+        ///   查詢類似 115200 的當地語系化字串。
+        /// </summary>
+        internal static string BaudRate {
+            get {
+                return ResourceManager.GetString("BaudRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 波特率 的當地語系化字串。
         /// </summary>
         internal static string baudRate_lbl_txt {
@@ -85,6 +94,15 @@ namespace SerialHelperApplication1 {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 8 的當地語系化字串。
+        /// </summary>
+        internal static string DataBits {
+            get {
+                return ResourceManager.GetString("DataBits", resourceCulture);
             }
         }
         
@@ -162,11 +180,38 @@ namespace SerialHelperApplication1 {
         }
         
         /// <summary>
+        ///   查詢類似 None 的當地語系化字串。
+        /// </summary>
+        internal static string Parity {
+            get {
+                return ResourceManager.GetString("Parity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 COM4 的當地語系化字串。
+        /// </summary>
+        internal static string PortName {
+            get {
+                return ResourceManager.GetString("PortName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 串口号 的當地語系化字串。
         /// </summary>
         internal static string serialNumber_lbl_txt {
             get {
                 return ResourceManager.GetString("serialNumber_lbl_txt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 One 的當地語系化字串。
+        /// </summary>
+        internal static string StopBits {
+            get {
+                return ResourceManager.GetString("StopBits", resourceCulture);
             }
         }
         
