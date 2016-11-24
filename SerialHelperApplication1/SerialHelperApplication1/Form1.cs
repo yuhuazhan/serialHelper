@@ -28,11 +28,16 @@ namespace SerialHelperApplication1
         display_formate dispFormate = display_formate.formate_string; //預設字串顯示
         PacketEndType Endtype = PacketEndType.EndTypeNone;//預設發送封包結尾不加/r/n
         delegate void Display(string str); //(委派)定義函式指標型態
-        public Encoding enc = Encoding.UTF8; //使用big5編碼
+        public Encoding enc = Encoding.UTF8; //使用utf-8編碼
+        private HexadecimalEncoding hEncod = new HexadecimalEncoding(Encoding.UTF8);
+        private UILanguage ul1 = new UILanguage(0);
         ResourceManager LocRM_cn = new ResourceManager("SerialHelperApplication1.WinFormStrings_cn", typeof(SerialHelper_Form).Assembly);//簡體資源管器
+       
         public SerialHelper_Form()
         {
             InitializeComponent();
+         
+
         }
         
         private void Form1_Load(object sender, EventArgs e)
@@ -43,6 +48,10 @@ namespace SerialHelperApplication1
             IntializeUIForSerial();
             comPort_tmr.Interval = 300; // 300ms偵測一次是否有com
             comPort_tmr.Start();//開啟timer 
+            foreach(var s in ul1.showXML())
+            {
+                MessageBox.Show(s);
+            }
         }
 
        
@@ -64,7 +73,7 @@ namespace SerialHelperApplication1
             //combobox 取得所有工作管理員當中的串口號         
             comSelect_comb.Items.AddRange(SerialPort.GetPortNames());
             dataBitsSelect_comb.Items.AddRange(dataBits);
-           
+            
         }
         //開啟串口或關閉串口按鈕回調函數
         private void mangeCom_btn_Click(object sender, EventArgs e)
@@ -126,7 +135,8 @@ namespace SerialHelperApplication1
                 
             else
             {
-                recvText_rtxtb.Text += HexadecimalEncoding.ToHexString(str);
+                
+                recvText_rtxtb.Text += hEncod.ToHexString(str);
             }
         }
 
@@ -153,7 +163,7 @@ namespace SerialHelperApplication1
             groupBox3.Text = LocRM_cn.GetString("groupBox3_txt");
             groupBox4.Text = LocRM_cn.GetString("groupBox4_txt");
 
-            
+         
 
         }
 
@@ -214,13 +224,13 @@ namespace SerialHelperApplication1
             if (recv_formate_chb.Checked)//選擇16進制發送，打勾
             {
                 dispFormate = display_formate.formate_hex;
-                recvText_rtxtb.Text = HexadecimalEncoding.ToHexString(recvText_rtxtb.Text);
+                recvText_rtxtb.Text = hEncod.ToHexString(recvText_rtxtb.Text);
             }
             else
             {
                 dispFormate = display_formate.formate_string;
                 //MessageBox.Show(recvText_rtxtb.Text);
-                recvText_rtxtb.Text = HexadecimalEncoding.FromHexString(recvText_rtxtb.Text);
+                recvText_rtxtb.Text = hEncod.FromHexString(recvText_rtxtb.Text);
                 //MessageBox.Show(HexadecimalEncoding.FromHexString(recvText_rtxtb.Text));
             }
         }

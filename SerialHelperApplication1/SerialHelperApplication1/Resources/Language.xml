@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<UILanguage> 
+  <Language id="01"> 
+    <Name>繁體中文</Name> 
+    <Gender>female</Gender> 
+  </Language>
+  <Language id="02"> 
+    <Name>Daisy Abbey</Name> 
+    <Gender>female</Gender> 
+  </Language>   
+</UILanguage>
